@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MPI;
+using System.Globalization;
 
 namespace PP2
 {
@@ -54,14 +55,15 @@ namespace PP2
 
     class Program
     {
-        
+
 
         static void Main(string[] args)
         {
 
             using (new MPI.Environment(ref args))
             {
-                if (Communicator.world.Rank == 0) {
+                if (Communicator.world.Rank == 0)
+                {
 
                     var ai = new AIPlayer();
                     var handler = new BoardHandler();
@@ -77,40 +79,47 @@ namespace PP2
                             var input = Console.Read();
                             Console.WriteLine();
 
-                            
-                                var rowNumber = Convert.ToChar(input) - '0';
 
-                                var flush = Console.ReadLine();
+                            var rowNumber = Convert.ToChar(input) - '0';
 
-                                if (rowNumber < 1 || rowNumber > 7)
-                                {
-                                    throw new Exception();
-                                }
-                                else
-                                {
-                                    var board = handler.AddState(PointState.Black, rowNumber);
-                                    success = true;
+                            var flush = Console.ReadLine();
 
-                                    var move = ai.NextMove(board, 6) + 1;
-                                    handler.AddState(PointState.White, move);
-                                }
-                            
+                            if (rowNumber < 1 || rowNumber > 7)
+                            {
+                                throw new Exception();
+                            }
+                            else
+                            {
+                                var board = handler.AddState(PointState.Black, rowNumber);
+                                success = true;
+
+                                Console.WriteLine(DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff",
+                                            CultureInfo.InvariantCulture));
+
+                                var move = ai.NextMove(board, 6) + 1;
+                                handler.AddState(PointState.White, move);
+
+                                Console.WriteLine(DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff",
+                                            CultureInfo.InvariantCulture));
+                            }
+
 
                         } while (!success);
                     }
 
-                }else
+                }
+                else
                 {
                     var worker = new Worker();
 
                     worker.WaitForRequest();
-                }                        
-                
+                }
+
             }
 
         }
 
-        
+
 
     }
 }
