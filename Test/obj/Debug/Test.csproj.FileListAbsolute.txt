@@ -1,0 +1,12 @@
+C:\Users\Rep\Documents\PP2\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\Test.dll
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\Test.pdb
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\PP2.exe
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\MPI.dll
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\MPIUtils.dll
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\PP2.pdb
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Rep\Documents\PP2\Test\bin\Debug\MPI.xml
+C:\Users\Rep\Documents\PP2\Test\obj\Debug\Test.dll
+C:\Users\Rep\Documents\PP2\Test\obj\Debug\Test.pdb

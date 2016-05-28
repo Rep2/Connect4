@@ -1,0 +1,9 @@
+C:\Users\Rep\Documents\PP2\PP2\bin\Debug\PP2.exe.config
+C:\Users\Rep\Documents\PP2\PP2\obj\Debug\PP2.csprojResolveAssemblyReference.cache
+C:\Users\Rep\Documents\PP2\PP2\bin\Debug\PP2.exe
+C:\Users\Rep\Documents\PP2\PP2\bin\Debug\PP2.pdb
+C:\Users\Rep\Documents\PP2\PP2\obj\Debug\PP2.exe
+C:\Users\Rep\Documents\PP2\PP2\obj\Debug\PP2.pdb
+C:\Users\Rep\Documents\PP2\PP2\bin\Debug\MPI.dll
+C:\Users\Rep\Documents\PP2\PP2\bin\Debug\MPIUtils.dll
+C:\Users\Rep\Documents\PP2\PP2\bin\Debug\MPI.xml
